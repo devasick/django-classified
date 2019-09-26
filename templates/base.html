@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{title}}</title>
+    {% load static %}
+    {% load staticfiles %}
+    {% load bootstrap4 %}
+
+
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+ <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+
+     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    
+</head>
+<body>
+	 
+   {% include 'navbar.html' %}
+   <div class="container">
+   {% block content %}
+     
+   {% endblock %} 
+  </div>
+    </body>
+</html>

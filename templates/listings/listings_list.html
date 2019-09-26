@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ <div class="row">
+  
+ {% for row in getListing %}
+ <div class="col-3 border m-2 p-3">
+  <h3>{{row.title}}</h3>
+  <p>{{row.description}}</p>
+  <p>{{row.price}}</p>
+   </div>
+ {% endfor  %}
+
+ </div>
+ {% endblock content %} }
+ 
